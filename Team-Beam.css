@@ -28,8 +28,29 @@
   font-size: 20px;
 }
 
-.beamsR {
-  height:40vh;
-  width: 40%;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width:100%;
+  margin: 0px;
+}
+
+nav li {
+list-style: none;
+border: 2px black solid;
+width: 10%;
+text-align: center;
+padding: 5px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.return {
 
 }
