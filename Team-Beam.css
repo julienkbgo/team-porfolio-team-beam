@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  margin:0;
+}
+
 #header{
   display:flex;
   flex-direction: row;
@@ -54,3 +59,55 @@ footer {
 .return {
 
 }
+
+/* Projects Section (Pete)
+*/
+#container {
+  margin:auto;
+}
+.projects {
+  width: 500px;
+  height: 250px;
+  position: relative;
+}
+
+/*#projectImage1 {
+  vertical-align: top;
+  display: inline-block;
+  margin:auto;
+  padding:0;
+  float:left;
+}*/
+
+
+#container {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  /*padding-bottom: 300px;*/
+  /*border: 1px solid black;*/
+  list-style-type: none;
+}
+
+#container > li > img {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  height: 250px;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px dotted black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#container > li {
+  flex-basis: 50%;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+.projects { margin: auto; }
