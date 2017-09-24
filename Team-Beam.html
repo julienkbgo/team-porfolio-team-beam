@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Team Beam| Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="Team-Beam.css" type="text/CSS" rel="stylesheet">
+</head>
+<body>
+
+<div id="top"></div>
+<div id="header">
+  <img class="beams" src="https://cdn.pixabay.com/photo/2017/07/08/10/16/explosion-2483998_960_720.jpg" />
+  <p class="title"><span class="title-text">Team Beam</span><br><span class="sub-text">Web Developers for the future</span></p>
+
+  <img class="beams" src="https://cdn.pixabay.com/photo/2017/07/08/10/16/explosion-2483998_960_720.jpg" />
+
+</div>
+
+<nav>
+  <ul>
+    <li>Summary</li>
+    <li>About TeamBeam</li>
+    <li>Skills</li>
+    <li>Team Portfolio</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<br>
+  <h2>Summary</h2>
+
+  <div id=intro> Here at Team Beam we are a small boutique of developers who love all things "tech".
+      We are here to understand your business needs and take away the stress of navigating through all the options available by custom-tailoring all your technical needs under one umbrella.
+  </div>
+
+  <h2>Skills</h2>
+
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>NodeJS</li>
+
+  </ul>
+
+    <!-- Projects Section (Pete)
+    Goal: display 4x projects of equal size in a 2x2 grid.
+          on hover, the mouse cursor will change to a hand, indicating
+          an onclick interaction.
+          when 1x image is clicked, the image will enlarge to fill 80% of the screen size
+    html
+    1. create heading Projects
+    2. create div container Projects
+      2.1. create 4x img placeholders for Team Beam Projects
+    3. create subheader placeholder name for each project img (project 1, 2..)
+    css
+    1. resize all image to be equal - flexbox?
+    2. centre imgs to page
+    3. make border for images?
+    js
+    1. onhover, change mouse cursor to hand
+    2. onclick, enlarge image to fill 80% of screen size.
+    3. if clicked outside of image, enlarged image closes.
+    4. if clicked left/right side of image, navigates to next project.
+    projectImage1
+    -->
+    <h2> Projects </h2>
+    <hr />
+    <ul id="container">
+        <li><img class="projects" id="myImg" src="http://www.designyourway.net/diverse/5/coolwebsites/yougottalovefrontend_com.jpg" alt="Team Beam Project 1"/> Project 1 </li>
+        <li><img class="projects" id="myImg2" src="https://designmodo.com/wp-content/uploads/2011/10/4.jpg" alt="Team Beam Project 2"/> Project 2 </li>
+        <li><img class="projects" id="myImg3" src="http://designspectacle.ca/wp-content/uploads/2014/02/DS_website_Vancouver-Graphic-Designer_Web-Design_EbookLaunch1.jpg" alt="Team Beam Project 3"/> Project 3 </li>
+        <li><img class="projects" id="myImg4" src="https://designm.ag/wp-content/uploads/2015/03/08-boy-coy-parallax-motion-homepage.jpg" alt="Team Beam Project 4"/> Project 4 </li>
+    </ul>
+
+    <!-- Trigger the Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+   <footer id="footer">
+  <p class="copyright">&copy;Copyright TeamBeam</p>
+  <a href="https://www.facebook.com/schoolofcode" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/theschoolofcode" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/company/school-of-code" target="_blank" class="fa fa-linkedin"></a>
+  <a href="" class="fa fa-envelope"></a>
+
+  <a href="#top" class="return">top&uarr;</a>
+</footer>
+
+    <script>
+
+            // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        myImg.onclick = function (){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+
+        myImg2.onclick = function openModal(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+
+        myImg3.onclick = function openModal(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+
+        myImg4.onclick = function openModal(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        /*var summary= document.getElementsByClassName("")
+
+        document.querySelector('.contact').scrollIntoView({
+        behavior: 'smooth' */
+
+    </script>
+  </body>
+
+</html>
