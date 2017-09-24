@@ -63,6 +63,15 @@ nav li:hover{
   opacity:1;
 }
 
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
 footer {
   position: fixed;
   padding: 5px;
@@ -132,6 +141,14 @@ footer {
   color: white;
   left: 750px;
 }
+
+.return {
+   text-decoration: none;
+   position: absolute;
+   color: green;
+   width: 50px;
+   top: 100px;
+ }
 
 /* Projects Section (Pete)
 */

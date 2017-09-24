@@ -18,12 +18,12 @@
 
 </div>
 
-<nav>
+<nav id="navbar" data-spy="affix", data-offset-top="197">
   <ul>
     <li>Summary</li>
     <li>About TeamBeam</li>
     <li>Skills</li>
-    <li>Team Portfolio</li>
+    <li onclick="portfolio()">Team Portfolio</li>
     <li>Contact</li>
   </ul>
 </nav>
@@ -51,7 +51,7 @@
     4. if clicked left/right side of image, navigates to next project.
     projectImage1
     -->
-    <h2> Projects </h2>
+    <h2 id="projects"> Projects </h2>
     <hr />
     <ul id="container">
         <li><img class="projects" id="myImg" src="http://www.designyourway.net/diverse/5/coolwebsites/yougottalovefrontend_com.jpg" alt="Team Beam Project 1"/> Project 1 </li>
@@ -127,11 +127,38 @@
         modal.style.display = "none";
         }
 
-        /*var summary= document.getElementsByClassName("")
+// navbar scroll to other sections
 
-        document.querySelector('.contact').scrollIntoView({
-        behavior: 'smooth' */
-        
+        function portfolio(){
+        var projects= document.getElementByID("projects")
+
+        projects.scrollIntoView(){
+}
+        /* var summary= document.getElementByID("container")
+
+        document.getElementByID('container').scrollIntoView({
+        behavior: 'smooth'
+
+        var summary= document.getElementByID("container")
+
+        document.getElementByID('container').scrollIntoView({
+        behavior: 'smooth'
+
+        var summary= document.getElementByID("container")
+
+        document.getElementByID('container').scrollIntoView({
+        behavior: 'smooth'
+
+        var summary= document.getElementByID("container")
+
+        document.getElementByID('container').scrollIntoView({
+        behavior: 'smooth'
+
+        var summary= document.getElementByID("container")
+
+        document.getElementByID('container').scrollIntoView({
+        behavior: 'smooth''*/
+
     </script>
   </body>
 
