@@ -63,6 +63,36 @@ nav li:hover{
   opacity:1;
 }
 
+
+
+#intro {
+  position:relative;
+  padding-top: 20px;
+  min-height: 5%;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 140px;
+  padding-right: 100px;
+  list-style-type: none;
+
+
+}
+
+ul {
+  position:relative;
+  padding-top: 20px;
+  min-height: 5%;
+  min-width: 100%;
+
+
+  padding-left: 140px;
+  padding-right: 100px;
+
+
+}
+
 footer {
   position: fixed;
   padding: 5px;
