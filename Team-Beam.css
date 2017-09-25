@@ -163,6 +163,22 @@ footer {
   left: 750px;
 }
 
+
+/*Julien CSS */
+.flex-container {
+display:inline;
+display: flex;
+width:1200px;
+height::800px;
+background-color:pink;
+}
+.flex-item {
+background-color:black;
+width:300px;
+height:300px;
+margin:5px;
+}
+
 /* Projects Section (Pete)
 */
 
